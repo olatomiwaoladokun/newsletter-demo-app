@@ -1,0 +1,104 @@
+/* general styling */
+body{
+    font-family: "Roboto", sans-serif;
+    /* font-weight: 400, 700; */
+    /* font-size: 16px; */
+    background-color: hsl(234, 29%, 20%) ;
+}
+
+li {
+    text-decoration: none;
+}
+
+
+
+/* the sign-up-class */
+
+.sign-up-class{
+    background-color: hsl(0, 0%, 100%);
+    margin: 0 auto;
+    position: relative;
+    align-content: center;
+    display: grid;
+    border-radius: 2rem;
+    padding: 2rem .5rem;
+    top: 10rem;
+    width: 50rem;
+    height: 30rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2rem;
+    justify-content: space-between;
+}
+
+/* sign-in text styling */
+.sign-up-text{
+    position: relative;
+    top: 2rem;
+    left: 2rem;
+}
+.sign-up-text h1{
+    color:black;
+    font-weight: 700;
+}
+
+/* not h1 */
+.sign-up-class > h1{
+    font-size:16px;
+}
+
+/* sign-in image styling */
+.sign-up-class img{
+    width:21rem;
+    position: relative;
+    right: -2rem;
+}
+/* sign-in image hover styling */
+.sign-up-class img:hover, .sign-up-class img:focus{
+    transform: translateX(-5rem) translateY(-1rem);
+    box-shadow: 25px 25px 25px hsl(4, 100%, 67%);
+    cursor: pointer;
+    
+    transition: all 0.3s ease-in-out;
+}
+
+
+/* styling the list-icon of the promtion */
+.list-icon {
+    width: 1rem !important;
+    padding-right: .5rem !important;
+    position: relative !important;
+    left: 0rem;
+}
+
+
+#email-input, #submit-button {
+    padding: 1rem ;
+    margin: .5rem ;
+    border-radius:5px;
+    width: 100%;
+    border: .5px transparent  hsl(0, 0%, 100%);
+}
+
+#email-input {
+    width: 90.5%;
+}
+
+#submit-button{
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(235, 18%, 26%);
+
+}
+
+#email-input:hover{
+   cursor: pointer;
+}
+
+/* linear-gradient */
+
+
+
+.attribution{
+    position: relative;
+    top: 20rem;
+
+}
