@@ -53,9 +53,8 @@ li {
     right: -2rem;
 }
 /* sign-in image hover styling */
-.sign-up-class img:hover, .sign-up-class img:focus{
-    transform: translateX(-5rem) translateY(-1rem);
-    box-shadow: 25px 25px 25px hsl(4, 100%, 67%);
+.sign-up-img:hover, .sign-up-img:focus{
+    transform: translateX(5rem) translateY(-1rem);
     cursor: pointer;
     
     transition: all 0.3s ease-in-out;

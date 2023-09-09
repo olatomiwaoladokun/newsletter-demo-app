@@ -1,5 +1,2 @@
-const emailInput = document.getElementById('email-input');
-
-emailInput.addEventListener("mouseover", () =>{
-    console.log("Hello!");
-});
+let emailInput = document.getElementById('email-input');
+let submitButton = document.getElementById('submit-button');

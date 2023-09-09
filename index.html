@@ -3,13 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./assets/images/favicon-32x32.png"
+      href="./images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="./style/styles.css" />
 
@@ -51,8 +50,16 @@
         />And much more!
 
         <h5>Email address</h5>
-        <input type="email" placeholder="email@company.com" id="email-input" />
-        <button id="submit-button">Subscribe to monthly newsletter</button>
+        <form>
+          <input
+            type="email"
+            placeholder="email@company.com"
+            id="email-input"
+          />
+          <button type="submit" id="submit-button">
+            Subscribe to monthly newsletter
+          </button>
+        </form>
         <!-- Sign-up form end -->
 
         <!-- Success message start -->
@@ -76,5 +83,5 @@
     </div>
   </body>
 
-  <script src="./index.html"></script>
+  <script src="./index.js"></script>
 </html>
