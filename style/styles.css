@@ -44,10 +44,6 @@ li {
     display: inline-block;
     line-height: 20%;
 }
-/* not h1 */
-.sign-up-class > h1{
-    font-size:16px;
-}
 
 /* sign-in image styling */
 .sign-up-class img{
@@ -78,22 +74,27 @@ li {
     margin: .5rem ;
     border-radius:5px;
     width: 100%;
-    border: .5px transparent  hsl(0, 0%, 100%);
+    border: .1px   black solid;
 }
 
 #email-input {
     width: 90.5%;
+
 }
 
 #submit-button{
     color: hsl(0, 0%, 100%);
     background-color: hsl(235, 18%, 26%);
-
+    border:none;
+    font-weight: 700;
+    font-weight: 16px;
 }
 
-#email-input:hover{
+#email-input:hover, #submit-button:hover{
    cursor: pointer;
 }
+
+
 
 /* linear-gradient */
 
