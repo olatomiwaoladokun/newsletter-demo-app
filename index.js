@@ -1,23 +1,21 @@
 let emailInput = document.getElementById('email-input');
-let submitButton = document.getElementById('submit-button');
+let submitButton = document.getElementById('email-btn');
 let dismissBtn = document.getElementById('dismiss-btn');
+let thanksText = document.getElementById('thanks-text');
+let signUpClass = document.querySelector('.sign-up-class');
+let thanksMessageDiv = document.querySelector('.thanks-message');
 
-// emailInput.oninput = logInput;
-
-function logInput(){
-    console.log (emailInput.value);
-    // export emailInput.value
+function thanksMessage(){
+    console.log("Thank you!")
+    signUpClass.style.display = 'none';
+    thanksMessageDiv.style.display = 'block';
+    thanksText.innerHTML = `A confirmation email has been sent to ${emailInput.value}. Please open it and click the button inside to confirm your subscription.`;
 };
 
-let emailOutput = emailInput.value;
-function successPage(){
-    logInput();
-    console.log(dismissBtn);
-    location.replace("success.html");
-    
-};
-submitButton.addEventListener("click", successPage);
+function dismissMessage(){
+    location.reload();
+}
 
-export { emailOutput };
-
+submitButton.addEventListener('click', thanksMessage);
+dismissBtn.addEventListener('click', dismissMessage);
 
