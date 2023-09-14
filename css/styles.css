@@ -95,6 +95,9 @@ li {
 }
 
 
+#submit-button:hover{
+    background-image: linear-gradient(yellow, orange);    
+}
 
 /* linear-gradient */
 
