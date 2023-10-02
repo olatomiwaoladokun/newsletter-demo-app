@@ -1,11 +1,11 @@
 /* general styling */
-* {
+/* * {
     font-family: "Roboto", "Helvetica Neue";
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 
-}
+} */
 body{
     font-family: "Roboto", sans-serif;
     background-color: hsl(234, 29%, 20%) ;
@@ -170,23 +170,39 @@ li {
 
 @media screen and (max-width: 375px){
 
+    * {
+        font-family: "Roboto", "Helvetica Neue";
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    
+    }
+    
+
     .sign-up-class{
         width: fit-content;
-        grid-template-columns: repeat(1, 1fr);
-        display: block;
+        display: flex;
+        flex-direction: column;
         height: 78%;
         width: 25rem;
-        padding: 0px 0px 0px 0px;
+        padding: 0px ;
         margin: 0px;
-        top: 0px;
-        right: 2rem;
+        top: 0rem;
+        right: 2;
         left: 0px;
+        border-radius:  0px;
     }
 
     .sign-up-img-mobile{
         display: block;
         margin: none;
+        width: 100%;
     }
+    .sign-up-text{
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
     .sign-up-img{
         display: none;
     }
