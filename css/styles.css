@@ -1,8 +1,13 @@
 /* general styling */
+* {
+    font-family: "Roboto", "Helvetica Neue";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
 body{
     font-family: "Roboto", sans-serif;
-    /* font-weight: 400, 700; */
-    /* font-size: 16px; */
     background-color: hsl(234, 29%, 20%) ;
 }
 
@@ -30,6 +35,9 @@ li {
     justify-content: space-between;
 }
 
+.sign-up-img-mobile {
+    display: none;
+}
 /* sign-in text styling */
 .sign-up-text{
     position: relative;
@@ -157,6 +165,32 @@ li {
     top: 30rem;
 }
 
+
+/* mobile */
+
+@media screen and (max-width: 375px){
+
+    .sign-up-class{
+        width: fit-content;
+        grid-template-columns: repeat(1, 1fr);
+        display: block;
+        height: 78%;
+        width: 25rem;
+        padding: 0px 0px 0px 0px;
+        margin: 0px;
+        top: 0px;
+        right: 2rem;
+        left: 0px;
+    }
+
+    .sign-up-img-mobile{
+        display: block;
+        margin: none;
+    }
+    .sign-up-img{
+        display: none;
+    }
+}
 
 @keyframes fromButtom {
     0%{
