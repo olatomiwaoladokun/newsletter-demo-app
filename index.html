@@ -59,11 +59,13 @@
         />
         <p class="list-text">And much more!</p>
 
-        <form action="#">
-          <h5>Email address</h5>
+        <h5>Email address</h5>
+        <div class="error"></div>
+        <form class="email-form" action="#">
           <input
             type="email"
             placeholder="email@company.com"
+            spellcheck="false"
             id="email-input"
           />
           <button type="submit" class="submit-button" id="email-btn">

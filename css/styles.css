@@ -76,6 +76,10 @@ li {
     left: 0rem;
 }
 
+.error {
+    color: hsl(0, 100%, 50%);
+
+}
 
 #email-input, .submit-button {
     padding: 1rem ;
